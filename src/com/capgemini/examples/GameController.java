@@ -2,14 +2,9 @@ package com.capgemini.examples;
 
 public class GameController {
 
-    private int day;
-
-    public GameController() {
-        this.day = 0;
+    public void CreateGame(){
+        ArenaController myarena = new ArenaController();
     }
 
-    public int getDay() {
-        return day;
-    }
 
 }
