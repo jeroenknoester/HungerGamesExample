@@ -1,6 +1,7 @@
 package com.capgemini.examples.Controllers;
 
-import com.capgemini.examples.Domain.Contestant;
+import com.capgemini.examples.Domain.Abstracts.Contestant;
+import com.capgemini.examples.Domain.DistrictContestant;
 
 import java.util.ArrayList;
 
@@ -22,13 +23,13 @@ public class ArenaController {
 
     private ArrayList<Contestant> createContestants(){
         for (int i = 0; i < 24; i++) {
-            contestants.add(new Contestant());
+            contestants.add(new DistrictContestant());
         }
         return contestants;
     }
     public ArrayList<Contestant> getAliveContestants(){
         for(Contestant contestant : contestants){
-            if(contestant.isAlive())
+            if(contestant.getAlive())
                 aliveContestants.add(contestant);
         }
 

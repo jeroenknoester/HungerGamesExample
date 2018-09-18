@@ -1,4 +1,4 @@
-package com.capgemini.examples.Tests.ControllerTests;
+package com.capgemini.examples.Controllers.ControllerTests;
 
 import com.capgemini.examples.Controllers.ArenaController;
 import com.capgemini.examples.Controllers.GameController;
